@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="/js/home_script.js"></script> 
+    <script src="/js/change_layout.js"></script> 
+
+    <link rel="stylesheet" href="/css/home_style.css">
+    <script src="https://kit.fontawesome.com/c2fe7ccc23.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="background">
+    <nav>
+        <img src="/image/LogoInversa.png" class="logo">
+
+        <div class="search_bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+
+        <a href="cart.html">
+            <i id="cart-icon" class="fa-solid fa-cart-shopping cart-icon" style="color: #ffffff;"></i>
+        </a>
+
+        <i class="fa-regular fa-circle-user login-icon">
+            <div class="dropdown-content">
+                <a id="login-redirect" href="login.html" class="login-box">
+                    Login
+                </a>
+                <a id="signup-redirect" href="signup.html" class="login-box" style="top: 190px">
+                    Signup
+                </a>
+            </div>
+        </i>
+        
+        <a href="/html/products.html" class="rectangle-link">
+            <div class="text-link">Decoração</div>
+        </a>
+        <a href="/html/products.html" class="rectangle-link" style="left: 380px">
+            <div class="text-link">Utilitários</div>
+        </a>
+        <a href="/html/products.html" class="rectangle-link" style="left: 760px">
+            <div class="text-link">Brinquedos</div>        
+        </a>
+        <a href="/html/products.html" class="rectangle-link" style="left: 1140px">
+            <div class="text-link">Peças</div>
+        </a>
+        <a href="/html/products.html" class="rectangle-link" style="left: 1520px">
+            <div class="text-link">Outros</div>
+        </a>
+    </nav>
+
+    <main>  
+        <div class="text-xl text-home color-wht">
+            Descubra as melhores 
+            Impressões 3D
+            Do mercado
+        </div>
+        <img class="img-home">
+
+        <div class="text-xl text-home2 color-wht">
+            Veja alguns de nossos produtos!
+        </div>
+        <i class="fa-solid fa-angle-down see-products"></i>
+
+        <div class="grid-1">
+            <div class="image-print"></div>
+            <div class="image-print"></div>
+            <div class="image-print"></div>
+            <div class="image-print"></div>
+            <div class="image-print"></div>
+            <div class="image-print"></div>
+        </div>
+
+        <a href="pro">
+            <div class="see-more-button">
+                Veja mais
+            </div>
+        </a>
+
+
+        
+        <div class="copyright-text">
+            © 2023 ShopPrint, Inc. All rights not reserved.
+
+            Privacy Policy     Terms of Use     Accessibility 
+        </div>
+
+    </main>
+    <script>
+        changeLayout()
+    </script>
+    
+</body>
+</html>

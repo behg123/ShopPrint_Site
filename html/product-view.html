@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/products_scripts.js"></script>
+    <script src="https://kit.fontawesome.com/c2fe7ccc23.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<script>
+    window.onload = function () {
+        // Obtém os parâmetros da URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var comandos = urlParams.get("comandos");
+
+        var comando1 = comandos.split(":")[0];
+        var comando2 = comandos.split(":")[1];
+        var comando3 = comandos.split(":")[2];
+
+
+        document.getElementById("img-product-view").src= comando1;
+        document.getElementById("titulo").innerHTML = comando3;
+
+    }
+
+    
+</script>
+
+<body class="background">
+
+    <a href="products.html">
+        <i class="fa-solid fa-arrow-left three_bars" style="top:-30px;"></i>
+    </a>
+
+    <main class="login-screen">
+        <div class="grid-login-left">
+            <img alt="img-login" class="login-img" id="img-product-view">
+        </div>
+        <div class="grid-login-right">
+            <div class="titulo" id="titulo"></div>
+        </div>
+
+    </main>
+    <script>
+        changeLayout();
+    </script>
+</body>
+</html>

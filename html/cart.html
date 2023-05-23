@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="/js/cart_script.js"></script> 
+    <script src="/js/change_layout.js"></script> 
+
+    <link rel="stylesheet" href="/css/cart_style.css">
+    <script src="https://kit.fontawesome.com/c2fe7ccc23.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body onload="cartItems()">
+    <a href="home.html">
+        <img src="/image/LogoInversa.png" class="logo">
+    </a>
+
+    <div class="search_bar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+    <i id="cart-icon" class="fa-solid fa-cart-shopping cart-icon" style="color: #ffffff;"></i>
+
+    <i class="fa-regular fa-circle-user login-icon">
+        <div class="dropdown-content">
+            <a id="login-redirect" href="login.html" class="login-box">
+                Login
+            </a>
+            <a id="signup-redirect" href="signup.html" class="login-box" style="top: 190px">
+                Signup
+            </a>
+        </div>
+    </i>
+        
+    <main id="cart-list">
+        
+        
+    </main>
+       
+
+    <script>
+        changeLayout()
+    </script>
+    
+</body>
+</html>

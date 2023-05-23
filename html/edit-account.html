@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edite Sua conta</title>
+    <link rel="stylesheet" href="/css/edit_account_style.css">
+    <script src="/js/edit_account_script.js"></script> 
+
+    <script src="https://kit.fontawesome.com/c2fe7ccc23.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body onload="autoFillCamps()">
+    <a href="home.html">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <main>
+        <div class="grid-login-left">
+            <img src="/image/login-img.png" alt="img-login" class="login-img">
+        </div>
+
+        <div class="grid-login-right">
+            <h1>
+                Edite sua Conta
+            </h1>
+            <form>
+            <label for="username">Nome de Usuário</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+            <label for="password">Repita sua Senha</label>
+            <input type="password" id="password-repeat" name="password" placeholder="Digite sua senha">
+            <label for="password">Telefone</label>
+            <input type="text" id="telephone" name="telephone" placeholder="Digite sua senha">    
+            <div id="signup-error"></div>
+            <input class="submit" value="Entrar" onclick="edit_account()">
+
+            </form>
+        </div>
+
+    </main>
+
+</body>
+</html>

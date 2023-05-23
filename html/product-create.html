@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Produto</title>
+    <script src="/js/product_create_script.js"></script> 
+    <script src="/js/change_layout.js"></script> 
+
+    <link rel="stylesheet" href="/css/product-create_style.css">
+    <script src="https://kit.fontawesome.com/c2fe7ccc23.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="background">
+
+    <nav>
+
+        <img src="/image/LogoInversa.png" class="logo">
+
+        <div class="search_bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+
+        <a href="cart.html">
+            <i id="cart-icon" class="fa-solid fa-cart-shopping cart-icon" style="color: #ffffff;"></i>
+        </a>
+
+        <i class="fa-regular fa-circle-user login-icon">
+            <div class="dropdown-content">
+                <a id="login-redirect" href="login.html" class="login-box">
+                    Login
+                </a>
+                <a id="signup-redirect" href="signup.html" class="login-box" style="top: 190px">
+                    Signup
+                </a>
+            </div>
+        </i>
+
+
+        <main>
+            <div class="grid-login-right">
+                <h1>
+                    Criar um novo item
+                </h1>
+                <form>
+                <label for="username">Nome do Produto</label>
+                <input type="text" id="Nome" name="username" placeholder="Digite o nome do produto">
+                <label for="email">Descrição</label>
+                <input type="text" id="Descricao" name="email" placeholder="Digite a descrição do produto">
+                <label>Preço</label>
+                <input type="text" id="Preco" name="password" placeholder="Digite o preço do produto">
+                <label>Imagem</label>
+                <input type="text" id="Imagem" name="password" placeholder="Digite o link da imagem">
+                <label>Categoria</label>
+                <select id="categoria">
+                    <option value="brinquedo">Brinquedo</option>
+                    <option value="utilitario">Utilitário</option>
+                    <option value="peca">Peça</option>
+                </select>
+                <label class="material-text">Material</label>
+                <select id="material">
+                    <option value="PLA">PLA</option>
+                    <option value="ABS">ABS</option>
+                </select>
+                <label class="material-text">Cor</label>
+                <select id="color">
+                    <option value="Branco">Branco</option>
+                    <option value="Preto">Preto</option>
+                </select>
+                <div id="signup-error"></div>
+                
+                <input class="submit" value="Entrar" onclick="create_product()">
+
+                  
+                </form>
+            </div>
+    
+        </main>
+
+    </main>
+    <script>
+        changeLayout();
+        verifyRole();
+    </script>
+    
+</body>
+</html>

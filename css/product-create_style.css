@@ -1,0 +1,203 @@
+.background {
+    background: linear-gradient(180deg, #6100FF 10.33%, rgba(167, 82, 120, 0.868191) 60.33%, rgba(210, 133, 35, 0.785865) 105%, rgba(216, 139, 25, 0.776042) 110.33%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo{
+    position: absolute;
+    width: 4.5vw;
+    margin: 15px 0 0 20px
+}
+
+.search_bar {
+    position: absolute;
+    width: 42.4vw;
+    height: 4.1vw;
+    left: 28.5vw;   
+    top: 1vw;     
+    background: #FFFFFF;
+}
+
+.cart-icon{
+    position:relative;
+    left: 80vw;
+    top: -30px;
+    font-size:70px;
+    color:white;
+    padding-bottom: 30px; 
+}
+
+label{
+    weight:100%;
+    height:80%;
+}
+
+.search-icon{
+    margin: 10px 0 0 39vw;
+    font-size: 3vw;
+    font-color: #000000
+}
+
+
+.login-icon{
+    position:relative;
+    left: 85vw;
+    top: -30px;
+    font-size:70px;
+    color:white;
+    padding-bottom: 30px;
+}
+
+.login-box{
+    position: absolute;
+    width: 222px;
+    margin: -85px 0 0 -90px;
+    text-align: center;
+    line-height: 85px;
+    font-size: 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #6100FF;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    left: -85px;
+    margin-top: 10px;
+    min-width: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 100px;
+    z-index: 999;
+}
+
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1.4;
+    text-align: left;
+    margin: 10px 0 10px 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+i{
+    position: absolute;
+    margin: 40px 0 0 30px;
+    font-size: 70px;
+    color:white;
+    top:-30px;"
+}
+
+
+#Nome,
+#Descricao,
+#Preco,
+#Imagem,
+input[type="password"] {
+    top: -30px;
+    height: 50%;
+    width: 99%;
+    font-size: 24px;
+    margin: 10px 0 10px 0;    
+}
+
+
+select {
+    top: -30px;
+    height: 50%;
+    width: 30%;
+    font-size: 24px;
+    margin: 10px 0 10px 0;    
+}
+
+
+label {
+    display: block;
+    color: #666666;
+    font-size: 32px;
+} 
+
+main {
+    background: #FFFFFF;
+    position:absolute;
+    width: 70%;
+    max-width: 1440px;
+    margin: -40px 300px auto;
+    grid-template-columns: 1fr;
+}
+
+@media (max-width: 1400px) {
+    .grid-login-left {
+        display: none;
+    }
+    .grid-login-right {
+        grid-column: 1 / -1;
+    }
+}
+  
+@media (max-width: 1700px) {
+    main {
+      margin: 40px 40px;
+    }
+    .three_bars{
+        margin: 10px 10px;
+    }
+
+  }
+
+
+
+.grid-login-right{
+    margin: 0px 50px 50px 50px;
+}
+
+.login-img{
+    height: 690px;
+    width: 675px;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+.submit {
+    width:110px;
+    position:absolute;
+    top: 700px;
+    left: 1000px;
+    padding: 10px;
+    height: 50px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 40px;
+  }
+
+#signup-error {
+    position:relative
+    display: inline-block;  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #6100FF;
+    margin-top: 6px;
+}
+
+.login-icon:hover .dropdown-content{
+    display: block;
+}
+
+.material-text{
+    position: relative;
+
+}

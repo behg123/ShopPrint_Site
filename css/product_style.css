@@ -19,6 +19,14 @@
     background: #FFFFFF;
 }
 
+.cart-icon{
+    position:relative;
+    left: 80vw;
+    top: 15px;
+    font-size:70px;
+    color:white;
+    padding-bottom: 30px; 
+}
 
 .search-icon{
     margin: 15px 0 0 740px;

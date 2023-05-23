@@ -37,50 +37,51 @@ function getCookie(name) {
 
 
 
-    function edit_account(){
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-        const password_repeat = document.getElementById('password-repeat').value;
-        const telephone = document.getElementById('telephone').value;
-        const email = document.getElementById('email').value;
+function edit_account(){
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const password_repeat = document.getElementById('password-repeat').value;
+    const telephone = document.getElementById('telephone').value;
+    const email = document.getElementById('email').value;
 
-        const id = getCookie('id');
-        const token = getCookie('token');
+    const id = getCookie('id');
+    const token = getCookie('token');
 
-        if (!username) {
-            document.getElementById('signup-error').innerHTML = "Nome de usuário incompleto";
-        } else if (!password) {
-            document.getElementById('signup-error').innerHTML = "Senha incompleta";
-        } else if (!email) {
-            document.getElementById('signup-error').innerHTML = "Email incompleta";
-        } else if (!telephone){
-            document.getElementById('signup-error').innerHTML = "Telefone incompleto";
-        } 
-        else if (password != password_repeat){
-            document.getElementById('signup-error').innerHTML = "Senhas diferentes";
-        } else {
-            axios.put("https://localhost:7150/User/Update",{
-                id: id,
-                userName: username,
-                email: email,
-                password: password,
-                phoneNumber: telephone,
-                role: "User"
-            },{
-                headers: {
-                  Authorization: "Bearer " + token
-                }
-              }).then(function (response) {
-                window.location.href = "home.html";
-            })
-                .catch(function (error) {
-                    const responseData = error.response.data;
-                    if (responseData.errors) {
-                        const firstErrorKey = Object.keys(responseData.errors)[0];
-                        const firstError = responseData.errors[firstErrorKey][0];
-                        document.getElementById('signup-error').innerHTML = firstError;
-                    }
-                });
+    if (!username) {
+        document.getElementById('signup-error').innerHTML = "Nome de usuário incompleto";
+    } else if (!password) {
+        document.getElementById('signup-error').innerHTML = "Senha incompleta";
+    } else if (!email) {
+        document.getElementById('signup-error').innerHTML = "Email incompleta";
+    } else if (!telephone){
+        document.getElementById('signup-error').innerHTML = "Telefone incompleto";
+    } 
+    else if (password != password_repeat){
+        document.getElementById('signup-error').innerHTML = "Senhas diferentes";
+    } else {
+        axios.put("https://localhost:7150/User/Update",{
+            id: id,
+            userName: username,
+            email: email,
+            password: password,
+            phoneNumber: telephone,
+            role: "User"
+        },{
+            headers: {
+                Authorization: "Bearer " + token
             }
+            }).then(function (response) {
+            window.location.href = "home.html";
+        })
+            .catch(function (error) {
+                const responseData = error.response.data;
+                if (responseData.errors) {
+                    const firstErrorKey = Object.keys(responseData.errors)[0];
+                    const firstError = responseData.errors[firstErrorKey][0];
+                    document.getElementById('signup-error').innerHTML = firstError;
+                }
+            });
         }
+    }
+
     

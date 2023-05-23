@@ -107,7 +107,8 @@ function filterProducts() {
             newDiv.style.background = "white";
             newDiv.style.marginBottom = "100px";
             newDiv.onclick = function () { getId(id, image, newTitle.innerHTML) };
-    
+            newDiv.setAttribute("data-id", id);
+
             newPrice.style.fontFamily = 'Roboto';
             newPrice.style.fontStyle = 'normal';
             newPrice.style.fontWeight = '900';
@@ -130,3 +131,8 @@ function filterProducts() {
         console.error(error);
       });
   }
+
+
+function getId(id) {
+  window.location.href = "product-view.html?id=" + id;
+}

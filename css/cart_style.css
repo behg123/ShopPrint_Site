@@ -144,3 +144,57 @@ label{
     width: 200px;
     opacity: 30%;
 }
+
+.add-button {
+    position: relative;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.add-button::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.remove-button {
+    position: relative;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.remove-button::after {
+    content: '-';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.remove-item {
+    position: relative;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.remove-item::after {
+    content: 'Delete';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

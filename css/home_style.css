@@ -142,7 +142,7 @@ label{
     width: 350px;
     height: 350px;
     margin-left: 177px;
-    background: url(IMGS/3D-Benchy.jpg);
+    background: url(/image/3D-Benchy.jpg);
     border: 5px solid #FFFFFF;
     filter: drop-shadow(-8px 7px 4px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
@@ -154,7 +154,7 @@ label{
     width: 800px;
     height: 500px;
     margin: -390px 0 0 1000px;
-    background: url(IMGS/3Dprint-scaled2.png);
+    background: url(/image/3Dprint-scaled2.png);
     border: 4px solid #FFFFFF;
     border-radius: 49px;
 }

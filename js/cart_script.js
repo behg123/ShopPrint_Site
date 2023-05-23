@@ -22,7 +22,7 @@ function cartItems() {
             newDiv.style.fontFamily = "Roboto"
             newDiv.style.marginBottom = "100px";
             newDiv.style.flexGrow = "1";
-            newDiv.textContent = "Parece que seu carrinho está vazio :(";
+            newDiv.textContent = "Parece que seu carrinho esta vazio :(";
             newDiv.style.color = "#000000";
             newDiv.style.fontSize = "105px";
             
@@ -83,7 +83,7 @@ function addItem(items) {
         newPrice.style.fontSize = '32px';
         newPrice.style.color = "#FFFFFF";
         newPrice.style.margin = "100px";
-        newPrice.innerHTML = "R$ " + item.price + ",00";
+        newPrice.innerHTML = "R$" + item.price;
 
         newImage.style.borderStyle = "solid";
         newImage.style.borderColor = "#FFFFFF";

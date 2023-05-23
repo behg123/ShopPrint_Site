@@ -30,8 +30,6 @@ function addCart() {
   const productId = urlParams.get("id");
   const userId = getCookie("id")
   const token = getCookie("token")
-
-  alert(userId + " + " + productId)
   axios.put("https://localhost:7150/Cart/AddItem", {
     userID: userId,
     productId: productId
@@ -41,7 +39,8 @@ function addCart() {
     }
   })
     .then(function (response) {
-      
+      window.location.href = "products.html";
+
     })  
     .catch(function (error) {
       const responseData = error.response.data;

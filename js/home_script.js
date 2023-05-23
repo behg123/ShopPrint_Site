@@ -12,3 +12,8 @@ function checkCookieValue(cookieName, expectedValue) {
   return false;
 }
 
+
+function setImages(){
+  var image = document.getElementById("img-home")
+
+}

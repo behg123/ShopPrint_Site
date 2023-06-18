@@ -1,4 +1,23 @@
-.text-link{
+.apply-filter {
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.color-blk
+{
+    color: black;
+}
+
+
+.text-link
+{
     display: inline-block;  
     font-family: 'Roboto';
     font-style: normal;
@@ -9,7 +28,7 @@
     margin-top: 6px;
 }
 
-.text-m{
+.text-m {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -18,36 +37,21 @@
     text-align: center;
 }
 
-.color-blk{
-    color: black;
-}
-
-.grid-product-right {
+.grid-product-right
+{
     position: absolute;
     width: 80%;
     margin: -1440px 0 0 300px;
-    
     padding: 20px;
 }
 
 .grid-product-left {
-    position: sticky;
-    top: 0;
     width: 15%;
-    height: 1420px;
-    margin: 100px 0 0 0px;
     background: white;
-    opacity: 100%;
+    margin-top: 100px;
+    padding: 10px;
 }
 
-.text-filter{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    color: black;
-    padding: 2px;
-} 
 
 .grid-filter{
     margin: 0 0 0 10px;
@@ -55,17 +59,29 @@
     grid-template-columns: 40px 20px;
 }
 
+.text-filter {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    color: black;
+    padding: 2px;
+    margin-top: 10px;
+} 
+
+
 .wrapper {
     display: grid;
     grid-template-columns: 520px 520px 520px;
 }
   
 
-.filter-price{
-    width:70px;
+.filter-price {
+    width: 70px;
     height: 30px;
-    position:relative;
+    margin: 5px;
 }
+
 
 .grid-filter-left{
     float: left;
@@ -85,16 +101,3 @@ select {
     margin: 10px;    
 }
 
-.apply-filter{
-    width: 110px;
-    margin-top: 30px;
-    margin-right: 20px;
-    float:right;
-    padding: 10px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 16px;
-}

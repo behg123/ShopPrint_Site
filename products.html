@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/product_style.css">
     <link rel="stylesheet" href="/css/generic_style.css">
-
     <script src="https://kit.fontawesome.com/c2fe7ccc23.js" crossorigin="anonymous"></script>
-    <script src="/js/products_scripts.js"></script> 
-    <script src="/js/change_layout.js"></script> 
-
+    <script src="/js/products_scripts.js"></script>
+    <script src="/js/change_layout.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
 </head>
+
 <body class="background" onload="load_images()">
 
     <!--NAVBAR-->
@@ -40,50 +39,35 @@
                 </a>
             </div>
         </i>
-        <a href="products.html" class="rectangle-link">
-            <div class="text-link">Decoração</div>
-        </a>
-        <a href="products.html" class="rectangle-link" style="left: 380px">
-            <div class="text-link">Utilitários</div>
-        </a>
-        <a href="products.html" class="rectangle-link" style="left: 760px">
-            <div class="text-link">Brinquedos</div>        
-        </a>
-        <a href="products.html" class="rectangle-link" style="left: 1140px">
-            <div class="text-link">Peças</div>
-        </a>
-        <a href="products.html" class="rectangle-link" style="left: 1520px">
-            <div class="text-link">Outros</div>
-        </a>
+
+        <a href="products.html" class="rectangle-link text-link">Decoração</a>
+        <a href="products.html" class="rectangle-link text-link" style="left: 380px">Utilitários</a>
+        <a href="products.html" class="rectangle-link text-link" style="left: 760px">Brinquedos</a>
+        <a href="products.html" class="rectangle-link text-link" style="left: 1140px">Peças</a>
+        <a href="products.html" class="rectangle-link text-link" style="left: 1520px">Outros</a>
     </nav>
 
     <main>
-
         <div class="grid-product-left">
             <div class="text-m color-blk">Filtros</div>
             <hr style="width: 220px; margin-bottom:35px;">
-           
             <div>
                 <div class="text-filter" style="margin-left: 10px; margin-top: -20px;">Material</div>
                 <select id="material-select">
-                  <option value="PLA" selected>PLA</option>
-                  <option value="ABS" selected>ABS</option>
+                    <option value="PLA" selected>PLA</option>
+                    <option value="ABS" selected>ABS</option>
                 </select>
-              </div>
-              <hr style="width: 220px; margin:35px 0 35px 15px;">
-              <div>
+            </div>
+            <hr style="width: 220px; margin:35px 0 35px 15px;">
+            <div>
                 <div class="text-filter" style="margin-left: 10px; margin-top: -20px;">Cor</div>
-
                 <select id="color-select">
-                  <option value="Vermelho" selected>Vermelho</option>
-                  <option value="Azul" selected>Azul</option>
-                  <option value="Branco" selected>Branco</option>
-                  <option value="Preto" selected>Preto</option>
+                    <option value="Vermelho" selected>Vermelho</option>
+                    <option value="Azul" selected>Azul</option>
+                    <option value="Branco" selected>Branco</option>
+                    <option value="Preto" selected>Preto</option>
                 </select>
-              </div>
-              
-
-
+            </div>
             <hr style="width: 220px; margin:35px 0 35px 15px;">
             <div class="text-filter" style="margin-left: 10px; margin-top: -20px; margin-bottom: 10px;">Preço</div>
 
@@ -95,21 +79,17 @@
                 <input type="text" id="filter-max" class="filter-price">
                 <div class="text-filter" style="float:right">Max.</div>
             </div>
-            
-
-
             <button class="apply-filter" onclick="filterProducts()">Aplicar Filtro</button>
-
-
         </div>
         <div class="grid-product-right">
             <div class="wrapper" id="product-list"></div>
-        </div >
+        </div>
     </main>
     <script>
         changeLayout();
     </script>
 
-      
+
 </body>
+
 </html>

@@ -10,7 +10,6 @@
     margin: 15px 0 0 20px
 }
 
-
 .search_bar {
     position: absolute;
     width: 42.4vw;
@@ -52,7 +51,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 44px;
     color: #6100FF;
     margin-top: 6px;
 }
@@ -80,7 +79,6 @@
     color: #6100FF;
 }
 
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -92,8 +90,3 @@
     padding: 100px;
     z-index: 999;
 }
-
-.login-icon:hover .dropdown-content{
-    display: block;
-}
-

@@ -37,7 +37,7 @@ label {
 main {
     background: #FFFFFF;
     position:absolute;
-    width: 90%;
+    width: 100%;
     max-width: 1440px;
     margin: 100px 300px auto;
     display: grid;

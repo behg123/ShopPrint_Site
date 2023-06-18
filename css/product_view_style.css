@@ -1,7 +1,7 @@
 body {
-    background: linear-gradient(180deg, #6100FF 10.33%, rgba(167, 82, 120, 0.868191) 60.33%, rgba(210, 133, 35, 0.785865) 105%, rgba(216, 139, 25, 0.776042) 110.33%);
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: linear-gradient(180deg, #6100FF 10.33%, rgba(167, 82, 120, 0.868191) 60.33%, rgba(210, 133, 35, 0.785865) 105%, rgba(216, 139, 25, 0.776042) 110.33%);
 }
 
 h1 {
@@ -36,12 +36,13 @@ label {
 
 main {
     background: #FFFFFF;
-    position:absolute;
-    width: 90%;
-    max-width: 1440px;
-    margin: 100px 300px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 80%;
+    margin: 100px 300px auto;
+    max-width: 1440px;
+    position:absolute;
+    width: 90%;
 }
 
 @media (max-width: 1400px) {
@@ -174,8 +175,8 @@ main {
     grid-column: 2 / 3;
 }
 
-.login-img{
-    height: 695px;
+.product-img{
+    height: 710px;
     width: 675px;
     border-style: solid;
 }
@@ -223,7 +224,8 @@ main {
     margin: 0 0 0 20px;
 }
 
-.descricao{
+.descricao
+{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -235,7 +237,8 @@ main {
     text-overflow: ellipsis;
 }
 
-button {
+button 
+{
     position: relative;
     top: 485px;
     left: 500px;
@@ -247,5 +250,4 @@ button {
     border-radius: 3px;
     cursor: pointer;
     font-size: 20px;
-    
 }

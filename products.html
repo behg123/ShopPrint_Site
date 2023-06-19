@@ -8,81 +8,97 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/product_style.css">
     <link rel="stylesheet" href="/css/generic_style.css">
+
     <script src="https://kit.fontawesome.com/c2fe7ccc23.js" crossorigin="anonymous"></script>
     <script src="/js/products_scripts.js"></script>
     <script src="/js/change_layout.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body class="background" onload="load_images()">
-
-    <!--NAVBAR-->
     <nav>
-        <a href="home.html">
-            <img src="/image/LogoInversa.png" class="logo">
-        </a>
-        <div class="search_bar">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <div class="nav-container">
+            <a href="/home.html" class="logo-link">
+                <img src="./image/LogoInversa.png" class="logo" />
+            </a>
+
+            <div class="search-bar">
+                <input type="text" id="search-bar" class="search-input" placeholder="Search..." />
+                <i class="fa-solid fa-magnifying-glass search-icon" id="search-icon"></i>
+            </div>
+
+            <a href="cart.html">
+                <i id="cart-icon" class="fa-solid fa-cart-shopping cart-icon" style="color: #ffffff"></i>
+            </a>
+
+            <i class="fa-regular fa-circle-user login-icon">
+                <div class="dropdown-content">
+                    <a id="login-redirect" href="login.html" class="login-box">
+                        Login
+                    </a>
+                    <a id="signup-redirect" href="signup.html" class="login-box" style="top: 190px">
+                        Signup
+                    </a>
+                </div>
+            </i>
         </div>
 
-        <a href="cart.html">
-            <i id="cart-icon" class="fa-solid fa-cart-shopping cart-icon" style="color: #ffffff;"></i>
-        </a>
+        <nav class="rectangle-container">
+            <!-- conteúdo anterior do nav... -->
+            <a href="products.html" class="rectangle-link text-link">Todos</a>
+            <a href="products.html" class="rectangle-link text-link">Utilitários</a>
+            <a href="products.html" class="rectangle-link text-link">Brinquedos</a>
+            <a href="products.html" class="rectangle-link text-link">Decoração</a>
+            <a href="products.html" class="rectangle-link text-link">Outros</a>
+        </nav>
 
-        <i class="fa-regular fa-circle-user login-icon">
-            <div class="dropdown-content">
-                <a id="login-redirect" href="login.html" class="login-box">
-                    Login
-                </a>
-                <a id="signup-redirect" href="signup.html" class="login-box" style="top: 190px">
-                    Signup
-                </a>
-            </div>
-        </i>
+     
 
-        <a href="products.html" class="rectangle-link text-link">Decoração</a>
-        <a href="products.html" class="rectangle-link text-link" style="left: 380px">Utilitários</a>
-        <a href="products.html" class="rectangle-link text-link" style="left: 760px">Brinquedos</a>
-        <a href="products.html" class="rectangle-link text-link" style="left: 1140px">Peças</a>
-        <a href="products.html" class="rectangle-link text-link" style="left: 1520px">Outros</a>
+        
     </nav>
 
     <main>
-        <div class="grid-product-left">
-            <div class="text-m color-blk">Filtros</div>
-            <hr style="width: 220px; margin-bottom:35px;">
-            <div>
-                <div class="text-filter" style="margin-left: 10px; margin-top: -20px;">Material</div>
-                <select id="material-select">
-                    <option value="PLA" selected>PLA</option>
-                    <option value="ABS" selected>ABS</option>
-                </select>
-            </div>
-            <hr style="width: 220px; margin:35px 0 35px 15px;">
-            <div>
-                <div class="text-filter" style="margin-left: 10px; margin-top: -20px;">Cor</div>
-                <select id="color-select">
-                    <option value="Vermelho" selected>Vermelho</option>
-                    <option value="Azul" selected>Azul</option>
-                    <option value="Branco" selected>Branco</option>
-                    <option value="Preto" selected>Preto</option>
-                </select>
-            </div>
-            <hr style="width: 220px; margin:35px 0 35px 15px;">
-            <div class="text-filter" style="margin-left: 10px; margin-top: -20px; margin-bottom: 10px;">Preço</div>
+        <div class="grid-product-wrapper">
+            <div class="grid-product-left">
+                <div class="text-m color-blk">Filtros</div>
+                <hr style="width: 220px; margin-bottom:35px;">
+                <div>
+                    <div class="text-filter" style="margin-left: 10px; margin-top: -20px;">Material</div>
+                    <select id="material-select">
+                        <option value="Todos" selected>Todos</option>
+                        <option value="PLA" selected>PLA</option>
+                        <option value="ABS" selected>ABS</option>
+                    </select>
+                </div>
+                <hr style="width: 220px; margin:35px 0 35px 15px;">
+                <div>
+                    <div class="text-filter" style="margin-left: 10px; margin-top: -20px;">Cor</div>
+                    <select id="color-select">
+                        <option value="Todas" selected>Todas</option>
 
-            <div class="grid-filter-left">
-                <input type="text" id="filter-min" class="filter-price">
-                <div class="text-filter">Min.</div>
+                        <option value="Vermelho" selected>Vermelho</option>
+                        <option value="Azul" selected>Azul</option>
+                        <option value="Branco" selected>Branco</option>
+                        <option value="Preto" selected>Preto</option>
+                    </select>
+                </div>
+                <hr style="width: 220px; margin:35px 0 35px 15px;">
+                <div class="text-filter" style="margin-left: 10px; margin-top: -20px; margin-bottom: 10px;">Preço</div>
+
+                <div class="grid-filter-left">
+                    <input type="text" id="filter-min" class="filter-price">
+                    <div class="text-filter">Min.</div>
+                </div>
+                <div class="grid-filter-right">
+                    <input type="text" id="filter-max" class="filter-price">
+                    <div class="text-filter" style="float:right">Max.</div>
+                </div>
+                <button class="apply-filter" onclick="filterProducts()">Aplicar Filtro</button>
             </div>
-            <div class="grid-filter-right">
-                <input type="text" id="filter-max" class="filter-price">
-                <div class="text-filter" style="float:right">Max.</div>
+            <div class="grid-product-right">
+                <div class="wrapper" id="product-list"></div>
             </div>
-            <button class="apply-filter" onclick="filterProducts()">Aplicar Filtro</button>
-        </div>
-        <div class="grid-product-right">
-            <div class="wrapper" id="product-list"></div>
         </div>
     </main>
     <script>
@@ -92,4 +108,3 @@
 
 </body>
 
-</html>

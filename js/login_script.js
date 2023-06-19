@@ -30,7 +30,7 @@ function login_input() {
                 .then(function (response){
                     var role = response.data.role
                     setCookie("role", role, 7); 
-                    window.location.href = "/html/home.html";
+                    window.location.href = "/home.html";
 
                 })
                 .catch(function(error){

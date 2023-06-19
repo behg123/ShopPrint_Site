@@ -18,26 +18,42 @@
 
 <body onload="cartItems()">
     <nav>
-        <a href="home.html">
-            <img src="./image/LogoInversa.png" class="logo">
-        </a>
-    
-        <div class="search_bar">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-        </div>
-        <i id="cart-icon" class="fa-solid fa-cart-shopping cart-icon" style="color: #ffffff;"></i>
-    
-        <i class="fa-regular fa-circle-user login-icon">
-            <div class="dropdown-content">
-                <a id="login-redirect" href="login.html" class="login-box">
-                    Login
-                </a>
-                <a id="signup-redirect" href="signup.html" class="login-box" style="top: 190px">
-                    Signup
-                </a>
+        <div class="nav-container">
+            <a href="" class="logo-link">
+                <img src="./image/LogoInversa.png" class="logo" />
+            </a>
+
+            <div class="search-bar">
+                <input type="text" id="search-bar" class="search-input" placeholder="Search..." />
+                <i class="fa-solid fa-magnifying-glass search-icon" id="search-icon"></i>
             </div>
-        </i> 
+
+            <a href="cart.html">
+                <i id="cart-icon" class="fa-solid fa-cart-shopping cart-icon" style="color: #ffffff"></i>
+            </a>
+
+            <i class="fa-regular fa-circle-user login-icon">
+                <div class="dropdown-content">
+                    <a id="login-redirect" href="login.html" class="login-box">
+                        Login
+                    </a>
+                    <a id="signup-redirect" href="signup.html" class="login-box" style="top: 190px">
+                        Signup
+                    </a>
+                </div>
+            </i>
+        </div>
+
+        <nav class="rectangle-container">
+            <!-- conteúdo anterior do nav... -->
+            <a href="products.html" class="rectangle-link text-link">Todos</a>
+            <a href="products.html" class="rectangle-link text-link">Utilitários</a>
+            <a href="products.html" class="rectangle-link text-link">Brinquedos</a>
+            <a href="products.html" class="rectangle-link text-link">Peças</a>
+            <a href="products.html" class="rectangle-link text-link">Outros</a>
+        </nav>       
     </nav>
+
 
     <main id="cart-list">
 
@@ -50,4 +66,3 @@
 
 </body>
 
-</html>

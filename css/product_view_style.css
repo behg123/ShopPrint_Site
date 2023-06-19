@@ -131,18 +131,13 @@ input[type="password"] {
     margin: 10px 0 10px 0;
 }
 
-label {
-    display: block;
-    color: #666666;
-    font-size: 32px;
-} 
 
 main {
     background: #FFFFFF;
     position:absolute;
     width: 90%;
     max-width: 1440px;
-    margin: 100px 300px auto;
+    margin: 100px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -173,6 +168,7 @@ main {
 
 .grid-login-right{
     grid-column: 2 / 3;
+    position: relative; /* Adicione o posicionamento relativo para o posicionamento absoluto funcionar corretamente */
 }
 
 .product-img{
@@ -219,28 +215,30 @@ main {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 66px;
     text-align: left;
-    margin: 0 0 0 20px;
+    margin: 10px 0 0 20px;
 }
 
-.descricao
-{
+.descricao {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
+    font-size: 24px;
     text-align: left;
-    margin: 0 0 0 20px;
+    margin: 20px 50px 0 20px;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: normal;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-button 
-{
-    position: relative;
-    top: 485px;
+
+button {
+    position: absolute;
+    bottom: 30px; /* Posiciona o botão na parte inferior */
     left: 500px;
     width: 200px;
     padding: 10px;
@@ -250,4 +248,9 @@ button
     border-radius: 3px;
     cursor: pointer;
     font-size: 20px;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 0px; /* Adiciona espaçamento interno ao container */
 }

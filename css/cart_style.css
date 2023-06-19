@@ -1,100 +1,265 @@
 main {
-    background: #FFFFFF;
-    position:absolute;
-    width: 100%;
-    max-width: 1440px;
-    margin: 70px 240px auto;
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+  margin: 70px 240px auto;
 }
 
 body {
-    background: linear-gradient(180deg, #6100FF 10.33%, rgba(167, 82, 120, 0.868191) 60.33%, rgba(210, 133, 35, 0.785865) 105%, rgba(216, 139, 25, 0.776042) 110.33%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background: linear-gradient(
+    180deg,
+    #6100ff 10.33%,
+    rgba(167, 82, 120, 0.868191) 60.33%,
+    rgba(210, 133, 35, 0.785865) 105%,
+    rgba(216, 139, 25, 0.776042) 110.33%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-label{
-    weight:100%;
-    height:80%;
+label {
+  weight: 100%;
+  height: 80%;
 }
 
-.text-xl{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 80px;
-    line-height: 112px;
-    text-align: left;
+.text-xl {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 112px;
+  text-align: left;
 }
 
-.text-home2{
-    position: relative;
-    width: 575px;
-    height: 358px;
-    margin: 20px 0 0 450px;
-    white-space: nowrap;
+.text-home2 {
+  position: relative;
+  width: 575px;
+  height: 358px;
+  margin: 20px 0 0 450px;
+  white-space: nowrap;
 }
 
-.color-wht{
-    color: white;
+.color-wht {
+  color: white;
 }
 
-.text-home{
-    position: relative;
-    width: 575px;
-    height: 358px;
-    margin: 125px 0 0 180px;
+.text-home {
+  position: relative;
+  width: 575px;
+  height: 358px;
+  margin: 125px 0 0 180px;
 }
 
 .add-button {
-    position: relative;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
-    color: #000000;
-    font-weight: bold;
-    overflow: hidden;
+  position: relative;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+  overflow: hidden;
 }
 
 .add-button::after {
-    content: '+';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .remove-button {
-    position: relative;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
-    color: #000000;
-    font-weight: bold;
-    overflow: hidden;
+  position: relative;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+  overflow: hidden;
 }
 
 .remove-button::after {
-    content: '-';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  content: "-";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .remove-item {
-    position: relative;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
-    color: #000000;
-    font-weight: bold;
-    overflow: hidden;
+  position: relative;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+  overflow: hidden;
 }
 
 .remove-item::after {
-    content: 'Delete';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.cart-item {
+  margin: 50px;
+  width: 93%;
+  height: 55%;
+  background: #6100ff;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.cart-item-image {
+  border-style: solid;
+  border-color: #ffffff;
+  margin: 10px;
+  height: 250px;
+  width: 250px;
+}
+
+.cart-item-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  margin: 100px;
+  color: #ffffff;
+}
+
+.cart-item-price {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  color: #ffffff;
+  margin: 100px;
+}
+
+.add-button,
+.remove-button,
+.remove-item {
+  height: 50px;
+  width: 50px;
+  margin: 90px 0 0 0;
+  color: #000000;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.add-button::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.remove-button::after {
+  content: "-";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.remove-item::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cart-item-quantity {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 32px;
+  color: #000000;
+  margin: 95px 20px 0 20px;
+  color: #ffffff;
+}
+
+.cart-item {
+  margin: 50px;
+  width: 93%;
+  height: 55%;
+  background: #6100ff;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.cart-item-image {
+  border-style: solid;
+  border-color: #ffffff;
+  margin: 10px;
+  height: 250px;
+  width: 250px;
+}
+
+.cart-item-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  margin: 100px;
+  color: #ffffff;
+}
+
+.cart-item-price {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  color: #ffffff;
+  margin: 100px;
+}
+
+.add-button {
+  height: 50px;
+  width: 50px;
+  margin: 90px 0 0 0;
+}
+
+.cart-item-quantity {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 32px;
+  color: #ffffff;
+  margin: 95px 20px 0 20px;
+}
+
+.remove-button {
+  height: 50px;
+  width: 50px;
+  margin: 90px 0 0 0px;
+}
+
+.remove-item {
+  height: 50px;
+  width: 150px;
+  margin: 90px 0 0 70px;
+}
+
+.empty-cart {
+    width: 95%;
+    height: 75%;
+    display: flex;
+  }
+  
+  .empty-cart div {
+    margin: 110px;
+    font-family: Roboto;
+    margin-bottom: 100px;
+    flex-grow: 1;
+    color: #000000;
+    font-size: 105px;
+  }
+  
+  .empty-cart img {
+    margin: 50px;
+    flex-grow: 1;
+  }
+  

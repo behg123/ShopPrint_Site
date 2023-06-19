@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <script src="./js/home_script.js"></script> 
-    <script src="./js/change_layout.js"></script> 
 
-    <link rel="stylesheet" href="./css/home_style.css">
-    <link rel="stylesheet" href="./css/generic_style.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="./js/home_script.js"></script>
+    <script src="./js/change_layout.js"></script>
+
+    <link rel="stylesheet" href="./css/home_style.css" />
+    <link rel="stylesheet" href="./css/generic_style.css" />
     <script src="https://kit.fontawesome.com/c2fe7ccc23.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+
 <body class="background">
     <nav>
-        <img src="./image/LogoInversa.png" class="logo">
+        <div class="nav-container">
+            <a href="/home.html" class="logo-link">
+                <img src="./image/LogoInversa.png" class="logo" />
+            </a>
 
-        <div class="search_bar">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <div class="search-bar">
+                <input type="text" id="search-bar" class="search-input" placeholder="Search..." />
+                <i class="fa-solid fa-magnifying-glass search-icon" id="search-icon"></i>
+            </div>
+
+            <a href="cart.html">
+                <i id="cart-icon" class="fa-solid fa-cart-shopping cart-icon" style="color: #ffffff"></i>
+            </a>
+
+            <i class="fa-regular fa-circle-user login-icon">
+                <div class="dropdown-content">
+                    <a id="login-redirect" href="login.html" class="login-box">
+                        Login
+                    </a>
+                    <a id="signup-redirect" href="signup.html" class="login-box" style="top: 190px">
+                        Signup
+                    </a>
+                </div>
+            </i>
         </div>
 
-        <a href="cart.html">
-            <i id="cart-icon" class="fa-solid fa-cart-shopping cart-icon" style="color: #ffffff;"></i>
-        </a>
-
-        <i class="fa-regular fa-circle-user login-icon">
-            <div class="dropdown-content">
-                <a id="login-redirect" href="login.html" class="login-box">
-                    Login
-                </a>
-                <a id="signup-redirect" href="signup.html" class="login-box" style="top: 190px">
-                    Signup
-                </a>
-            </div>
-        </i>
-        
-        <a href="products.html" class="rectangle-link text-link">Decoração</a>
-        <a href="products.html" class="rectangle-link text-link" style="left: 380px">Utilitários</a>
-        <a href="products.html" class="rectangle-link text-link" style="left: 760px">Brinquedos</a>
-        <a href="products.html" class="rectangle-link text-link" style="left: 1140px">Peças</a>
-        <a href="products.html" class="rectangle-link text-link" style="left: 1520px">Outros</a>
+        <nav class="rectangle-container">
+            <a href="products.html" class="rectangle-link text-link">Todos</a>
+            <a href="products.html" class="rectangle-link text-link">Utilitários</a>
+            <a href="products.html" class="rectangle-link text-link">Brinquedos</a>
+            <a href="products.html" class="rectangle-link text-link">Decoração</a>
+            <a href="products.html" class="rectangle-link text-link">Outros</a>
+        </nav>       
     </nav>
 
-    <main>  
+
+    <main>
         <div class="text-xl text-home color-wht">
-            Descubra as melhores 
-            Impressões 3D
-            Do mercado
+            Descubra as melhores Impressões 3D Do mercado
         </div>
-        <img id="img-home" class="img-home">
+        <img id="img-home" class="img-home" />
 
         <div class="text-xl text-home2 color-wht">
             Veja alguns de nossos produtos!
@@ -66,23 +74,18 @@
         </div>
 
         <a href="products.html">
-            <div class="see-more-button">
-                Veja mais
-            </div>
+            <div class="see-more-button">Veja mais</div>
         </a>
 
-
-        
         <div class="copyright-text">
-            © 2023 ShopPrint, Inc. All rights not reserved.
-
-            Privacy Policy     Terms of Use     Accessibility 
+            © 2023 ShopPrint, Inc. All rights not reserved. Privacy Policy Terms of
+            Use Accessibility
         </div>
-
     </main>
     <script>
-        changeLayout()
+        changeLayout();
     </script>
-    
 </body>
+<>
+
 </html>

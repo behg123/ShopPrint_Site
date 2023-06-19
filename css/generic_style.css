@@ -6,12 +6,13 @@
 
 .cart-icon {
     color: white;
-    font-size: 70px;
-    padding-bottom: 30px;
-    position: relative;
-    left: 200px;
-    top: 20px;
-}
+    font-size: 4vw; /* Tamanho de fonte responsivo em relação à largura da janela */
+    padding-bottom: 3vh; /* Tamanho responsivo em relação à altura da janela */
+    position: absolute;
+    left: 80%; /* Ajuste a posição horizontal conforme necessário */
+    top: 2.5vh; /* Ajuste a posição vertical conforme necessário */
+  }
+  
 
 .dropdown-content {
     display: none;
@@ -45,7 +46,7 @@
     padding-bottom: 30px;
     position: relative;
     right: 30px;
-    top: 20px;
+    top: 15px;
 }
 
 
@@ -91,36 +92,39 @@
 .search-bar {
     display: inline-block;
     position: relative;
-    left: 540px;
-}
-
-.search-icon {
+    left: 29.5%; /* Ajuste a posição horizontal conforme necessário */
+    margin-bottom: 10px; /* Adicione margem inferior conforme necessário */
+  }
+  
+  .search-icon {
     color: #999999;
-    font-size: 48px;
+    font-size: 2.5vw; /* Tamanho de fonte responsivo em relação à largura da janela */
     position: absolute;
-    right: 25px;
+    right: -22.5vw; /* Ajuste a posição horizontal conforme necessário */
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer
-}
-
-.search-input {
+    cursor: pointer;
+  }
+  
+  .search-input {
     border: none;
     border-radius: 5px;
-    font-size: 24px;
-    height: 80px;
+    font-size: 1.5vw; /* Tamanho de fonte responsivo em relação à largura da janela */
+    height: 7vh; /* Tamanho responsivo em relação à altura da janela */
     padding: 5px;
-    width: 800px;
-}
+    width: 240%; /* Ajuste a largura conforme necessário */
+    max-width: 800px; /* Defina uma largura máxima para evitar que o campo de pesquisa se estenda muito */
+  }
+  
 
 .text-link {
     color: #6100FF;
     display: inline-block;
     font-family: 'Roboto';
-    font-size: 24px;
+    font-size: 2.5vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 44px;
+    line-height: 4.8vh;
     margin-top: 6px;
 }
 

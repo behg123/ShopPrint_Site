@@ -3,6 +3,13 @@ label{
     height:80%;
 }
 
+.home-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .text-xl{
     font-family: 'Roboto';
     font-style: normal;
@@ -14,9 +21,7 @@ label{
 
 .text-home2{
     position: relative;
-    width: 575px;
-    height: 358px;
-    margin: 20px 0 0 450px;
+    margin: 1% 0 10% 20%;
     white-space: nowrap;
 }
 
@@ -26,25 +31,25 @@ label{
 
 .text-home{
     position: relative;
-    width: 575px;
-    height: 358px;
-    margin: 125px 0 0 180px;
+    width: 60vh;
+    min-width: 600px;
+    margin: 7vh 0 0 20vh;
 }
 
-.grid-1{
-    margin: -10px 0 0 64px;
+.grid-1 {
+    margin: -10px 0 0 180px;
     display: grid;
-    grid-template-columns: 520px 520px 520px;
-}
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
 
-.image-print{
+.image-print {
     box-sizing: border-box;
-    position: inherent;
     margin-bottom: 20px;
-    width: 350px;
-    height: 350px;
-    margin-left: 177px;
-    background: url(/image/3D-Benchy.jpg);
+    width: 69%;
+    max-width: 520px;
+    height: 40vh;
+    background: url(/image/3D-Benchy.jpg) no-repeat center center / cover;;
     border: 5px solid #FFFFFF;
     filter: drop-shadow(-8px 7px 4px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
@@ -53,12 +58,14 @@ label{
 .img-home{
     box-sizing: border-box;
     position: relative;
-    width: 800px;
-    height: 500px;
-    margin: -390px 0 0 1000px;
+    width: 100%;
+    max-width: 800px; 
+    height: 60vh;
     background: url(/image/3Dprint-scaled2.png);
     border: 4px solid #FFFFFF;
     border-radius: 49px;
+    margin: 6vh 10vh 0 0;
+
 }
 
 .copyright-text{

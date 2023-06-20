@@ -32,8 +32,16 @@ function createProductDiv(product) {
 
 function load_images() {
   const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get('category');
   const productId = urlParams.get('id');
-  
+    
+  const filterParams = {
+    minValue: null,
+    maxValue: null,
+    category: [category],
+    color: [],
+    material: [],
+  };
   if (productId) {
     axios.get("https://localhost:7150/Product/GetById/" + productId)
       .then(function(response) {
@@ -47,6 +55,22 @@ function load_images() {
       .catch(function(error) {
         console.error(error);
       });
+  } else if (category) {
+    axios
+    .post("https://localhost:7150/Product/Filter", filterParams)
+    .then(function (response) {
+      const products = response.data;
+      const wrapper = document.getElementById("product-list");
+      wrapper.innerHTML = "";
+
+      products.forEach(function (product, index) {
+        const newDiv = createProductDiv(product);
+        wrapper.appendChild(newDiv);
+      });
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
   } else {
     axios
       .get("https://localhost:7150/Product/GetAll")
@@ -67,17 +91,17 @@ function load_images() {
 }
 
 function filterProducts() {
-  const material = document.getElementById("material-select").value;
-  const color = document.getElementById("color-select").value;
-  const minPrice = document.getElementById("filter-min").value;
-  const maxPrice = document.getElementById("filter-max").value;
+  const material = document.getElementById("material-select").value || null;
+  const color = document.getElementById("color-select").value || null;
+  const minPrice = document.getElementById("filter-min").value || null;
+  const maxPrice = document.getElementById("filter-max").value || null;
 
   const filterParams = {
     minValue: minPrice,
     maxValue: maxPrice,
     category: [],
-    color: [color],
-    material: [material],
+    color: [color].filter(Boolean),
+    material: [material].filter(Boolean),
   };
 
   axios
@@ -95,4 +119,10 @@ function filterProducts() {
     .catch(function (error) {
       console.error(error);
     });
+}
+
+
+
+function getId(id) {
+  window.location.href = "product-view.html?id=" + id;
 }

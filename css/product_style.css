@@ -100,8 +100,8 @@ select {
 }
 
 .product {
-  width: 19.1vw; /* Tamanho responsivo em relação à largura da janela */
-  height: auto; /* Altura ajustada automaticamente ao conteúdo */
+  width: 21vw; /* Tamanho responsivo em relação à largura da janela */
+  height: 26vw; /* Altura ajustada automaticamente ao conteúdo */
   background: white;
   margin-bottom: 40px;
 }
@@ -109,7 +109,7 @@ select {
 .product-img {
   padding: 7px;
   height: 65%; /* Tamanho responsivo em relação à altura do elemento pai */
-  width: 90%; /* Largura ajustada automaticamente ao elemento pai */
+  width: 95%; /* Largura ajustada automaticamente ao elemento pai */
 }
 
 .product-title {

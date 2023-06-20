@@ -1,0 +1,82 @@
+body {
+    background: linear-gradient(180deg, #6100FF 10.33%, rgba(167, 82, 120, 0.868191) 60.33%, rgba(210, 133, 35, 0.785865) 105%, rgba(216, 139, 25, 0.776042) 110.33%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3em;
+    
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.three_bars {
+    position: absolute;
+    margin: 50px 0 0 40px;
+    font-size: 70px;
+    color: white;
+}
+
+label {
+    display: block;
+    color: #666666;
+    font-size: 32px;
+} 
+
+main {
+    background: #FFFFFF;
+    position: absolute;
+    width: 80vw;
+    margin: 3% auto 0 10vw;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item label {
+    margin-bottom: 5px;
+}
+
+.grid-item input {
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button#capturar-valores {
+    margin: 0 0 0 625px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+select{
+    height: 50px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+

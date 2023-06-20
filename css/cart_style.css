@@ -234,32 +234,46 @@ label {
 .remove-button {
   height: 50px;
   width: 50px;
-  margin: 90px 0 0 0px;
+  margin: 90px 0 0 0;
 }
 
 .remove-item {
   height: 50px;
-  width: 150px;
-  margin: 90px 0 0 70px;
+  width: 210px;
+  margin: 90px 50px 0 70px;
 }
 
 .empty-cart {
-    width: 95%;
-    height: 75%;
-    display: flex;
-  }
-  
-  .empty-cart div {
-    margin: 110px;
-    font-family: Roboto;
-    margin-bottom: 100px;
-    flex-grow: 1;
-    color: #000000;
-    font-size: 105px;
-  }
-  
-  .empty-cart img {
-    margin: 50px;
-    flex-grow: 1;
-  }
-  
+  width: 95%;
+  height: 75%;
+  display: flex;
+}
+
+.empty-cart div {
+  margin: 110px;
+  font-family: Roboto;
+  margin-bottom: 100px;
+  flex-grow: 1;
+  color: #000000;
+  font-size: 105px;
+}
+
+.empty-cart img {
+  margin: 50px;
+  flex-grow: 1;
+}
+
+.checkout-button{
+    width: 200px;
+
+    margin: -20px 60px 20px 0;
+    float:right;
+    padding: 10px;
+    height: 70px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 40px;
+}

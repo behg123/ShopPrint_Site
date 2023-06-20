@@ -23,13 +23,52 @@
                 <img alt="img-login" class="login-img" id="img-product-view">
             </div>
             <div class="grid-login-right">
-                <div class="titulo" id="titulo"></div>
-                <div class="descricao" id="descricao"></div>
-                <button onclick="addCart()">
-                    Adicionar ao carrinho
-                </button>
+                <label class="info-label">
+                    <input type="text" id="input-titulo" class="titulo" disabled>
+                </label>
+                <label class="info-label">
+                    <textarea id="input-descricao" class="descricao" rows="3" disabled></textarea>
+                </label>
+                
+                <label class="info-label">
+                    <strong>Preço:</strong>
+                    <input type="text" id="input-preco" disabled>
+                </label>
+                <label class="info-label">
+                    <strong>Estoque:</strong>
+                    <input type="text" id="input-estoque" disabled>
+                </label>
+                <label class="info-label">
+                    <strong>Categoria:</strong>
+                    <select id="input-categoria" disabled>
+                      <option value="Brinquedo">Brinquedo</option>
+                      <option value="Utilitario">Utilitario</option>
+                      <option value="Peca">Peça</option>
+                      <option value="Outros">Outros</option>
+                    </select>
+                  </label>
+                  
+                <label class="info-label">
+                    <strong>Material:</strong>
+                    <select id="input-material" disabled>
+                        <option value="PLA">PLA</option>
+                        <option value="ABS">ABS</option>
+                    </select>
+                </label>
+                <label class="info-label">
+                    <strong>Cor:</strong>
+                    <select id="input-cor" disabled>
+                        <option value="Branco">Branco</option>
+                        <option value="Preto">Preto</option>
+                        <option value="Vermelho">Vermelho</option>
+                        <option value="Azul">Azul</option>
+                    </select>
+                </label>
+                
+                <button id="cart-button" onclick="addToCart()">Adicionar ao carrinho</button>
+                <button id="update-button" onclick="updateProduct()">Atualizar produto</button>
             </div>
         </main>
     </div>
 </body>
-
+</html>

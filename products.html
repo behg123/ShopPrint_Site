@@ -45,14 +45,12 @@
         </div>
 
         <nav class="rectangle-container">
-            <!-- conteúdo anterior do nav... -->
-            <a href="products.html" class="rectangle-link text-link">Todos</a>
-            <a href="products.html" class="rectangle-link text-link">Utilitários</a>
-            <a href="products.html" class="rectangle-link text-link">Brinquedos</a>
-            <a href="products.html" class="rectangle-link text-link">Decoração</a>
-            <a href="products.html" class="rectangle-link text-link">Outros</a>
+            <a href="products.html" class="rectangle-link text-link" id="todos-link">Todos</a>
+            <a href="products.html?category=Utilitario" class="rectangle-link text-link" id="utilitarios-link">Utilitários</a>
+            <a href="products.html?category=Brinquedo" class="rectangle-link text-link" id="brinquedos-link">Brinquedos</a>
+            <a href="products.html?category=Peca" class="rectangle-link text-link" id="decoracao-link">Peça</a>
+            <a href="products.html?category=Outros" class="rectangle-link text-link" id="outros-link">Outros</a>
         </nav>
-
      
 
         
@@ -66,21 +64,20 @@
                 <div>
                     <div class="text-filter" style="margin-left: 10px; margin-top: -20px;">Material</div>
                     <select id="material-select">
-                        <option value="Todos" selected>Todos</option>
-                        <option value="PLA" selected>PLA</option>
-                        <option value="ABS" selected>ABS</option>
+                        <option value="" selected>Todos</option>
+                        <option value="PLA">PLA</option>
+                        <option value="ABS">ABS</option>
                     </select>
                 </div>
                 <hr style="width: 220px; margin:35px 0 35px 15px;">
                 <div>
                     <div class="text-filter" style="margin-left: 10px; margin-top: -20px;">Cor</div>
                     <select id="color-select">
-                        <option value="Todas" selected>Todas</option>
-
-                        <option value="Vermelho" selected>Vermelho</option>
-                        <option value="Azul" selected>Azul</option>
-                        <option value="Branco" selected>Branco</option>
-                        <option value="Preto" selected>Preto</option>
+                        <option value="" selected>Todas</option>
+                        <option value="Vermelho">Vermelho</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Branco">Branco</option>
+                        <option value="Preto">Preto</option>
                     </select>
                 </div>
                 <hr style="width: 220px; margin:35px 0 35px 15px;">

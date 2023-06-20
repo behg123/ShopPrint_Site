@@ -19,7 +19,7 @@
 <body onload="cartItems()">
     <nav>
         <div class="nav-container">
-            <a href="" class="logo-link">
+            <a href="home.html" class="logo-link">
                 <img src="./image/LogoInversa.png" class="logo" />
             </a>
 
@@ -45,12 +45,11 @@
         </div>
 
         <nav class="rectangle-container">
-            <!-- conteúdo anterior do nav... -->
-            <a href="products.html" class="rectangle-link text-link">Todos</a>
-            <a href="products.html" class="rectangle-link text-link">Utilitários</a>
-            <a href="products.html" class="rectangle-link text-link">Brinquedos</a>
-            <a href="products.html" class="rectangle-link text-link">Peças</a>
-            <a href="products.html" class="rectangle-link text-link">Outros</a>
+            <a href="products.html" class="rectangle-link text-link" id="todos-link">Todos</a>
+            <a href="products.html?category=Utilitario" class="rectangle-link text-link" id="utilitarios-link">Utilitários</a>
+            <a href="products.html?category=Brinquedo" class="rectangle-link text-link" id="brinquedos-link">Brinquedos</a>
+            <a href="products.html?category=Peca" class="rectangle-link text-link" id="decoracao-link">Peça</a>
+            <a href="products.html?category=Outros" class="rectangle-link text-link" id="outros-link">Outros</a>
         </nav>       
     </nav>
 

@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <script src="./js/home_script.js"></script>
-    <script src="./js/change_layout.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/payment_style.css">
+    <link rel="stylesheet" href="/css/generic_style.css">
+    <script src="./js/payment.js"></script> 
+    <script src="./js/change_layout.js"></script> 
 
-    <link rel="stylesheet" href="./css/home_style.css" />
-    <link rel="stylesheet" href="./css/generic_style.css" />
     <script src="https://kit.fontawesome.com/c2fe7ccc23.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+<body onload="PaymentFrom()">
 
-<body class="background">
     <nav>
         <div class="nav-container">
-            <a href="/home.html" class="logo-link">
+            <a href="/home.html" class="logo-link" style="left: 200px;">
                 <img src="./image/LogoInversa.png" class="logo" />
             </a>
 
@@ -50,47 +49,19 @@
             <a href="products.html?category=Peca" class="rectangle-link text-link" id="decoracao-link">Peça</a>
             <a href="products.html?category=Outros" class="rectangle-link text-link" id="outros-link">Outros</a>
         </nav>
-          
     </nav>
-
+    <a href="home.html">
+        <i class="fa-solid fa-arrow-left three_bars" style="top:-30px;"></i>
+    </a>
 
     <main>
 
-        <div class="home-container">
-            <div class="text-xl text-home color-wht">
-                Descubra as melhores Impressões 3D Do mercado
-            </div>
-            <img id="img-home" class="img-home" />
-    
-        </div>
 
-        <div class="text-xl text-home2 color-wht">
-            Veja alguns de nossos produtos!
-        </div>
-        <i class="fa-solid fa-angle-down see-products"></i>
+        <div id="form-container">
 
-        <div class="grid-1">
-            <div class="image-print" style="background: url(/image/0.jpg) no-repeat center center / cover;"></div>
-            <div class="image-print" style="background: url(/image/1.jpg) no-repeat center center / cover;"></div>
-            <div class="image-print" style="background: url(/image/2.jpg) no-repeat center center / cover;"></div>
-            <div class="image-print" style="background: url(/image/3.jpg) no-repeat center center / cover;"></div>
-            <div class="image-print" style="background: url(/image/4.jpg) no-repeat center center / cover;"></div>
-            <div class="image-print" style="background: url(/image/5.jpg) no-repeat center center / cover;"></div>
-        </div>
-
-        <a href="products.html">
-            <div class="see-more-button">Veja mais</div>
-        </a>
-
-        <div class="copyright-text">
-            © 2023 ShopPrint, Inc. All rights not reserved. Privacy Policy Terms of
-            Use Accessibility
         </div>
     </main>
     <script>
         changeLayout();
     </script>
 </body>
-
-
-</html>

@@ -26,7 +26,8 @@ function changeLayout() {
   searchIcon.addEventListener("click", function() {
     searchProducts();
   });
-
+  
+  
   if (cookieExists) {
     var dropdownContent = document.querySelector(".dropdown-content");
 
@@ -103,14 +104,11 @@ function searchProducts() {
   axios.get("https://localhost:7150/Product/GetByName/" + searchInput)
     .then(function(response) {
       const products = response.data.id;
-
-      if (products.length > 0) {
         window.location.href = "products.html?id=" + products; // Passar o ID como parâmetro na URL
-      } else {
-        console.log("Nenhum produto encontrado.");
-      }
     })
     .catch(function(error) {
       console.error(error);
+      window.location.href = "products.html?id=notfound"; // Passar o ID como parâmetro na URL
+
     });
 }
